@@ -1,0 +1,15 @@
+# Never commit real secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated/local data -- regenerated automatically by the pipeline,
+# no need to version-control it
+audit_trail.db
+data/events.jsonl
+data/diagnoses.jsonl
+data/interventions.jsonl
+dashboard/dashboard.html
+sensitivity_results.csv
