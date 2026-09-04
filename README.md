@@ -97,13 +97,6 @@ offers a one-time trial credit:
   static templates, so the validated recovery-rate numbers stay fast,
   offline, and untouched by this.
 
-Both are strictly optional and fail safe: without `GEMINI_API_KEY` set,
-diagnosis falls back to its rule-based default and messages fall back to
-`ACTION_MESSAGES`' static templates — nothing breaks. The dashboard shows
-an "AI" or "Template" badge on every row so which path ran is never
-hidden. **Get a free key at https://aistudio.google.com/apikey** (no
-card required) and add it to `.env` as `GEMINI_API_KEY` to activate both.
-
 Safety note: the model never writes the actual payment link — only a
 literal `{link}` placeholder, substituted in afterward — and any URL it
 writes anyway despite instructions gets stripped by a regex safety net
@@ -155,7 +148,7 @@ revenue_recovery/
 - **The dashboard is a single static HTML file** with no CDN dependency
   — it will render even with no wifi on stage.
 
-## Recovery-rate honesty, for judge Q&A
+## Recovery-rate honesty,
 
 The `recovery_prob` values in `pipeline/config.py` are calibrated
 against real published benchmarks (Churnkey, Baremetrics, AgentCollect,
