@@ -1,4 +1,4 @@
-# AI Revenue Recovery — Working Prototype
+# CauseWay (AI Revenue Recovery) — Working Prototype
 
 A bounded, auditable agent that detects at-risk revenue across all three
 loss types named in the brief — **payment failures**, **checkout
